@@ -1,3 +1,6 @@
+# NOTICE
+This program was updated by [Cedy](https://github.com/MeheheCedy22). Original repo is [here](https://github.com/sirpsycho/dmarc).
+
 # Description
 This script queries and parses DMARC records for a list of given domains.
 

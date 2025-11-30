@@ -100,7 +100,6 @@ for domain in domains:
   # DMARC Records
   cmd = "dig TXT _dmarc.%s" % domain
   raw_response = subprocess.check_output(cmd, shell=True).decode("utf-8", errors="ignore")
-  # fullrecord = find_between(find_between(raw_response, ";; ANSWER SECTION:", ";;"), '"', '"\n').strip() + ";"
   fullrecord = ""
   if ";; ANSWER SECTION:" in raw_response:
     answer_section = find_between(raw_response, ";; ANSWER SECTION:", ";;")
