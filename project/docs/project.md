@@ -160,7 +160,7 @@ Testoval som spoofovanie domén s a bez ochranných mechanizmov. Testoval som po
 - Cloudflare email forwarding
 - Proton.me
 
-Inštrukcie na použitie a nastavenie nástroja sú priamo v [github repozitári projektu](https://github.com/MeheheCedy22/BIT).
+Inštrukcie na použitie a nastavenie nástroja sú priamo v [github repozitári projektu](https://github.com/MeheheCedy22/BIT/blob/main/project/README.md).
 
 Program má 3 režimy:
 - `check` - iba overí dependencies

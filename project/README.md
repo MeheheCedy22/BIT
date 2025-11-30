@@ -57,7 +57,7 @@ Tested only on Kali Linux.
 
 1. **Clone the repository**
 ```bash
-git clone [<repository-url>](https://github.com/MeheheCedy22/BIT.git)
+git clone https://github.com/MeheheCedy22/BIT.git
 cd project
 ```
 
@@ -118,4 +118,4 @@ python3 email_tool.py check
 
 ## Resources
 
-- for resources check [project documentation](docs/project.md)
+- for resources check [project documentation](docs/project.md#referencie)
