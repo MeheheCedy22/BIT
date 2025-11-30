@@ -21,12 +21,12 @@ project/
 ├── email_tool.py               # Main application
 ├── requirements.txt            # Python dependencies
 ├── README.md                   # This file
-└── deps/
-    └── dmarc/
-        └── getdmarcrecords.py  # DMARC checking script
-    docs/
-        ├── project.pdf         # Project documentation
-        └── project.md          # ^^^^^^^^^^^^^^^^^^^^^
+├── deps/
+│   └── dmarc/
+│       └── getdmarcrecords.py  # DMARC checking script
+└── docs/
+    ├── project.md              # Project documentation
+    └── project.pdf             # ^^^^^^^^^^^^^^^^^^^^^
 ```
 
 ## Features
@@ -110,7 +110,7 @@ python3 email_tool.py check
 
 1. **Domain Collection**: Downloads list of disposable email domains
 2. **Filtering**: Searches for domains with specific extensions (default: .sk, .cz)
-3. **Security Analysis**: Uses [`getdmarcrecords.py`](project/deps/dmarc/getdmarcrecords.py) to check email authentication
+3. **Security Analysis**: Uses [`getdmarcrecords.py`](./deps/dmarc/getdmarcrecords.py) to check email authentication
 4. **Vulnerability Detection**: Identifies domains lacking DMARC, SPF, and DKIM protection
 5. **Email Simulation**: Uses `swaks` to demonstrate spoofed email sending
 

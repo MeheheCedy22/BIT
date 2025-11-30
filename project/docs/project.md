@@ -186,11 +186,11 @@ Testovanie funkcionality `send` pre spoofovanu domenu `cederle.com`, ktorá má 
 
 Môžeme vidieť že služba proton dovolila odoslanie emailu, ale označila ho ako neautentifikovaný a zobrazila varovanie.
 
-![^^ proton inbox](./images/image-1.png)
+![pokracuje po tom co je vyssie, proton inbox](./images/image-1.png)
 
 Je to z dôvôdu toho, že doména `cederle.com` má správne nastavené SPF/DKIM/DMARC záznamy, takže proton vie, že email neprešiel DMARC politikou a preto ho označil ako neautentifikovaný
 
-![^^ header](./images/image-2.png)
+![pokracuje po tom co je vyssie, header](./images/image-2.png)
 
 Testovanie celeho workflow v interaktívnom režime pre doménu `seniorom.sk`, ktorá bola vybraná nástrojom z dôvodu chýbajúcich SPF/DKIM/DMARC záznamov:
 
@@ -198,9 +198,9 @@ Testovanie celeho workflow v interaktívnom režime pre doménu `seniorom.sk`, k
 
 Teraz vidíme, že služba Proton "nemá problém" s daným emailom (email je stále v spame):
 
-![^^ proton inbox](./images/image-4.png)
+![pokracuje po tom co je vyssie, proton inbox](./images/image-4.png)
 
-![^^ header](./images/image-5.png)
+![pokracuje po tom co je vyssie, header](./images/image-5.png)
 
 Testovanie pre doménu `seniorom.sk` a cieľovú adresu `marek@cederle.com`:
 
@@ -208,13 +208,13 @@ Testovanie pre doménu `seniorom.sk` a cieľovú adresu `marek@cederle.com`:
 
 Môžeme vidieť, že Cloudflare zablokoval odoslanie emailu, kvôli tomu, že nebol autentifikovaný:
 
-![^^ cloudflare block](./images/image-7.png)
+![pokracuje po tom co je vyssie, cloudflare block](./images/image-7.png)
 
 Ak vykúšame to isté len použijeme ako spoofovanú doménu `cederle.com`, ktorá má správne nastavené SPF/DKIM/DMARC záznamy, tak email neprejde, ale už kvôli SPF záznamu, ktorý hovorí že iba určité IP adresy môžu posielať emaily za túto doménu a kvôli DMARC:
 
 ![send, cederle.com, marek@cederle.com](./images/image-8.png)
 
-![^^ cloudflare block](./images/image-9.png)
+![pokracuje po tom co je vyssie, cloudflare block](./images/image-9.png)
 
 Ak vyskúšame poslať email na stuba.sk, tak email neprejde kvôli z dôvodu, že stuba má nastavené overovanie cez reverse DNS lookup. Tento mechanizmus sa snaží overiť našu verejnú IP adresu, ktorá nesedí s IP adresou spoofovanej domény pretože ju nevlastníme a nemáme taký záznam nastavený (nezáleží na tom či použijeme doménu seniorom.sk alebo cederle.com):
 
