@@ -57,7 +57,7 @@ def check_python_dependencies_early():
         print("3. Install dependencies:")
         print("   pip install -r requirements.txt\n")
         print("4. Run the script:")
-        print("   python3 email_tool.py full\n")
+        print("   python3 email_tool.py interactive\n")
         print("--- Alternative: Install globally (not recommended) ---")
         print(f"   pip3 install {' '.join(missing)}\n")
         print("="*60)
@@ -100,7 +100,7 @@ def show_venv_instructions():
     console.print("3. Install dependencies:")
     console.print("   [green]pip install -r requirements.txt[/green]\n")
     console.print("4. Run the script:")
-    console.print("   [green]python3 email_tool.py full[/green]\n")
+    console.print("   [green]python3 email_tool.py interactive[/green]\n")
     
     console.print("[bold yellow]Alternative: Install globally (not recommended)[/bold yellow]")
     console.print("   [green]pip3 install -r requirements.txt[/green]\n")
@@ -394,13 +394,6 @@ def send_spoofed_email(domain, sender_name, sender_email, target_email, subject,
             console.print(f"  To: {target_email}")
             console.print(f"  Subject: {subject}")
             
-            # Common error suggestions
-            console.print("\n[yellow]Common issues:[/yellow]")
-            console.print("  • Domain may have been blacklisted")
-            console.print("  • Target mail server may reject the email")
-            console.print("  • Network/firewall issues")
-            console.print("  • SMTP server not accepting connections")
-            
             return False
             
     except subprocess.TimeoutExpired:
@@ -413,7 +406,7 @@ def send_spoofed_email(domain, sender_name, sender_email, target_email, subject,
         return False
 
 @app.command()
-def full():
+def interactive():
     """Run the complete email spoofing workflow"""
     console.print("[bold cyan]Email Spoofing Tool - Educational Demonstration[/bold cyan]")
     console.print("[bold red]FOR EDUCATIONAL PURPOSES ONLY[/bold red]\n")
