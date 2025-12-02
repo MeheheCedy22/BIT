@@ -260,4 +260,4 @@ Program by sa dal rozšíriť o pôvodnú myšlienku na analýzu hlavičiek e-ma
   - [Google](https://support.google.com/a/answer/81126?visit_id=639000387538645772-1323224397&p=sender-guidelines-ip&rd=1#ip)
   - [stuba](https://en.wikipedia.org/wiki/Reverse_DNS_lookup)
   - [Cloudflare](https://developers.cloudflare.com/email-routing/postmaster/#mail-authentication-requirement)
-  - [Proton](https://proton.me/support/email-has-failed-its-domains-authentication-requirements-warning) - neblokujú odoslanie ale označia ich že 
+  - [Proton](https://proton.me/support/email-has-failed-its-domains-authentication-requirements-warning) - neblokujú odoslanie ale označia ich že neprešli autentifikáciou
