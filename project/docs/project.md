@@ -97,7 +97,7 @@ Ani DKIM však nie je úplne dokonalí a obsahuje nejaké vektory útokov. Napr�
 
 #### Domain-based Message Authentication, Reporting and Conformance (DMARC)
 
-Nadstavba nad SPF a DKIM, ktorá definuje politiku pre neautentifikované správy a umožňuje ich nahlasovanie. DMARC politika hovorí o tom, čo sa má stať s emailom po skontrolvaní mechanizmami SPF a DKIM.
+Nadstavba nad SPF a DKIM, ktorá definuje politiku pre neautentifikované správy a umožňuje ich nahlasovanie. DMARC politika hovorí o tom, čo sa má stať s emailom po skontrolovaní mechanizmami SPF a DKIM.
 
 Príklad DMARC záznamu:
 ```
