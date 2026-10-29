@@ -82,7 +82,9 @@ app = typer.Typer()
 # Configuration
 DEPS_DIR = Path(__file__).parent / "deps"
 DMARC_SCRIPT = DEPS_DIR / "dmarc" / "getdmarcrecords.py"
-DISPOSABLE_EMAILS_URL = "https://raw.githubusercontent.com/michaelshapkin/ghostmail-collector/refs/heads/main/data/disposable_emails.txt"
+# This Github project was deleted
+#DISPOSABLE_EMAILS_URL = "https://raw.githubusercontent.com/michaelshapkin/ghostmail-collector/refs/heads/main/data/disposable_emails.txt"
+DISPOSABLE_EMAILS_URL = "https://raw.githubusercontent.com/disposable-email-domains/disposable-email-domains/refs/heads/main/disposable_email_blocklist.conf"
 
 def show_venv_instructions():
     """Show instructions for setting up virtual environment"""
